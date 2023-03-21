@@ -1,0 +1,77 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-familyphotos1-dev-103806-authRole",
+      "UnauthRoleArn": "arn:aws:iam::631021016641:role/amplify-familyphotos1-dev-103806-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::631021016641:role/amplify-familyphotos1-dev-103806-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-familyphotos1-dev-103806-deployment",
+      "UnauthRoleName": "amplify-familyphotos1-dev-103806-unauthRole",
+      "StackName": "amplify-familyphotos1-dev-103806",
+      "StackId": "arn:aws:cloudformation:us-west-2:631021016641:stack/amplify-familyphotos1-dev-103806/251262e0-c80f-11ed-9d21-0af5124fe90b",
+      "AmplifyAppId": "dinr4d5q5xtaa"
+    }
+  },
+  "auth": {
+    "familyphotos1bf7f6f48": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "us-west-2_M7dmqQDqs",
+        "AppClientIDWeb": "reau2mq9ri6qn2sf49ujq9rq2",
+        "AppClientID": "56710fb8vbtj518cp8eq73t6hr",
+        "IdentityPoolId": "us-west-2:0878d094-c47e-4bf1-9b63-b029fdeb2793",
+        "UserPoolArn": "arn:aws:cognito-idp:us-west-2:631021016641:userpool/us-west-2_M7dmqQDqs",
+        "IdentityPoolName": "familyphotos1bf7f6f48_identitypool_bf7f6f48__dev",
+        "UserPoolName": "familyphotos1bf7f6f48_userpool_bf7f6f48"
+      },
+      "lastPushTimeStamp": "2023-03-21T18:54:54.270Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-familyphotos1-dev-103806-deployment/amplify-cfn-templates/auth/familyphotos1bf7f6f48-cloudformation-template.json",
+        "logicalId": "authfamilyphotos1bf7f6f48"
+      },
+      "lastPushDirHash": "zzg/O4XM9gyRaT9gEaWF5Idcj3k="
+    }
+  },
+  "storage": {
+    "AWSS3BucketFamilyPhoto1": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3",
+      "output": {
+        "BucketName": "amplify-familyphotos1-dev-103806-deployment103806-dev",
+        "Region": "us-west-2"
+      },
+      "lastPushTimeStamp": "2023-03-21T18:54:54.674Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-familyphotos1-dev-103806-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageAWSS3BucketFamilyPhoto1"
+      }
+    }
+  }
+}
